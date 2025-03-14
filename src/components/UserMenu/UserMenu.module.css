@@ -7,7 +7,7 @@
 .icon {
   width: 14px;
   height: 14px;
-  fill: var(--color-secondary-purpul);
+  fill: var(--color-secondary-white);
 }
 
 .text {
@@ -20,7 +20,7 @@
   align-items: center;
   justify-content: center;
   padding: 6px 2px;
-  background-color: rgb(66, 65, 65);
+  background-color: transparent;
   border: 1px solid transparent;
   border-radius: 8px;
   transition: border-color var(--primary-transition);
