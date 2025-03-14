@@ -1,0 +1,15 @@
+.nav {
+    display: flex;
+    gap: 24px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.link {
+font-size: 20px;
+transition: color 250 ms ease-in-out;
+}
+
+.active {
+    color: rgb(145, 100, 235);
+}
