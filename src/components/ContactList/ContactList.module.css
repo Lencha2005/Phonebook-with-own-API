@@ -1,9 +1,22 @@
+.wrapper {
+  padding: 30px 10px;
+}
+
 .list {
-    margin: 0;
-    padding-left: 0;
-    list-style-type: none;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+  }
 }

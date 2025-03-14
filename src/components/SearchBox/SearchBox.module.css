@@ -1,15 +1,52 @@
 .wrap {
-    width: 352px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 14px;
-    margin-bottom: 30px;
-    margin-right: auto;
-    margin-left: auto;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 14px;
+}
+
+.text {
+  font-size: 14px;
 }
 
 .input {
-    width: 340px;
-    height: 30px;
+  width: 260px;
+  height: 30px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: var(--color-primary-white);
+  background-color: rgb(66, 65, 65);
+  border: 0.5px solid var(--color-primary-white);
+  border-radius: 8px;
+  transition: border var(--primary-transition);
+}
+
+.input:hover,
+.input:focus {
+  border: 1px solid var(--color-primary-white);
+  outline: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .wrap {
+    width: 310px;
+  }
+  .text {
+    font-size: 16px;
+  }
+
+  .input {
+    width: 310px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrap {
+    width: 400px;
+  }
+
+  .input {
+    width: 350px;
+  }
 }

@@ -5,16 +5,17 @@
 }
 
 .icon {
-  width: 16px;
-  height: 16px;
+  width: 14px;
+  height: 14px;
+  fill: var(--color-secondary-purpul);
 }
 
 .text {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .btn {
-  width: 40px;
+  width: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,17 +30,17 @@
   border-color: var(--color-active-purpul);
 }
 
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .icon {
-    width: 14px;
-    height: 14px;
+    width: 16px;
+    height: 16px;
   }
 
   .text {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .btn {
-    width: 30px;
+    width: 40px;
   }
 }

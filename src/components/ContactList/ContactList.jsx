@@ -15,7 +15,7 @@ dispatch(fetchContacts())
 }, [dispatch])
 
   return (
-    <>
+    <div className={css.wrapper}>
     {Array.isArray(contacts) && contacts.length === 0 && (
         <p>There are no contacts in your phonebook yet!</p>
       )}
@@ -33,7 +33,7 @@ dispatch(fetchContacts())
       )})
     )}
     </ul>
-    </>
+    </div>
   )
 };
 

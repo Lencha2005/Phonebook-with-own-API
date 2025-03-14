@@ -19,11 +19,13 @@ const ContactsPage = () => {
   }, [dispatch]);
 
   return (
-    <div>
-      <h1 className={css.title}>Your phonebook</h1>
+    <div className={css.wrapper} >
+      <h1 className={css.title}>Your Phonebook</h1>
+      <div className={css.wrapperForm}>
       <ContactForm />
       {error && <ErrorMessage />}
       <SearchBox />
+      </div>
       <ContactList />
       <Toaster position="top-right" />
     </div>

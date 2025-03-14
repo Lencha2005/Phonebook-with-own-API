@@ -1,5 +1,38 @@
-@media screen and (min-width: 375px) and (max-width: 479px) {
-.title{
-font-size: 40px;
+.wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
+.title {
+  font-size: 32px;
+  text-align: center;
+}
+
+.wrapperForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--color-primary-purpul);
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 48px;
+  }
+
+  .wrapperForm {
+    flex-direction: row;
+    gap: 30px;
+    padding: 20px 20px 30px 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapperForm {
+    gap: 50px;
+    padding-bottom: 40px;
+  }
 }
