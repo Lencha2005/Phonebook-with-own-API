@@ -33,10 +33,10 @@ function App() {
   // При завантаженні додатку перенаправляємо на збережений шлях
   useEffect(() => {
     const lastPath = localStorage.getItem('lastPath');
-    if (lastPath) {
+    if (lastPath && lastPath !== location.pathname) {
       navigate(lastPath, { replace: true });
     }
-  }, [navigate]);
+  }, [navigate, location.pathname]);
 
   if(isRefreshing){
     return <div>Refreshing user...</div>

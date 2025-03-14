@@ -11,5 +11,5 @@ transition: color 250 ms ease-in-out;
 }
 
 .active {
-    color: rgb(145, 100, 235);
+    color: var(--color-secondary-purpul);
 }

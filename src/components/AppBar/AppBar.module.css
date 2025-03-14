@@ -2,5 +2,5 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1.5px solid rgb(110, 33, 134);
+    border-bottom: 1.5px solid var(--color-primary-purpul);
 }
