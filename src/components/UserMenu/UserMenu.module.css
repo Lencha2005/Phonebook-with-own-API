@@ -1,19 +1,45 @@
 .wrap {
-    display: flex;
-    gap: 10px;
-    align-items: center;
+  display: flex;
+  gap: 6px;
+  align-items: center;
 }
 
 .icon {
-    width: 20px;
-    height: 20px;
+  width: 16px;
+  height: 16px;
 }
 
 .text {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .btn {
-    width: 50px;
-    padding: 6px 2px 5px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 2px;
+  background-color: rgb(66, 65, 65);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: border-color var(--primary-transition);
+}
+
+.btn:hover {
+  border-color: var(--color-active-purpul);
+}
+
+@media (max-width: 767px) {
+  .icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 30px;
+  }
 }

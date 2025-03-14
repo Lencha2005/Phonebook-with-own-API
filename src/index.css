@@ -1,19 +1,18 @@
 :root {
-  color-scheme: light dark;
+  /* color-scheme: light dark; */
   color: rgba(247, 247, 247, 0.87);
   background-color: #242424;
 
   /* color */
   --color-primary-white: #f7f7f7;
   --color-primary-black: #101828;
-  --color-primary-purpul: #6E2186;  /*rgb(110, 33, 134) */
-  --color-primary-blue: #646cff;  
+  --color-primary-purpul: #562166; /*rgb(110, 33, 134) */
+  /* --color-primary-blue: #646cff;   */
   --color-secondary-white: #f9f9f9;
   --color-secondary-black: #213547;
-  --color-secondary-purpul: #9164EB;  /*rgb(145, 100, 235) */
-  --color-active-purpul: #C364EB;  /*rgb(195, 100, 235) */
-  --color-secondary-blue: #535bf2;
-
+  --color-secondary-purpul: #804091; /*rgb(145, 100, 235) */
+  --color-active-purpul: #c364eb; /*rgb(195, 100, 235) */
+  /* --color-secondary-blue: #535bf2; */
 
   /* --color-light-grey: #dadde1;
   --color-light-blue: #3470ff; */
@@ -28,25 +27,17 @@
 }
 
 a {
-  font-weight: 500;
-  /* color: var(--color-primary-blue); */
-  text-decoration: inherit;
-  transition: color var(--primary-transition);
-}
-a:hover {
-  color: var(--color-secondary-blue);
+  text-decoration: none;
 }
 
 body {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 1.3;
   margin: 0;
-  /* display: flex; */
-  /* place-items: start; */
   min-width: 320px;
-  min-height: 100vh; 
+  min-height: 100vh;
 }
 
 h1 {
@@ -59,42 +50,14 @@ p {
   margin: 0;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: rgb(66, 65, 65);
-  cursor: pointer;
-  transition: border-color var(--primary-transition);
-}
-button:hover {
-  border-color: var(--color-primary-blue);
-  
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: var(--color-primary-black);
-    background-color:#f7f7f7;
-  }
-  /* a:hover {
-    color: #747bff;
-  } */
-  button {
-    background-color: var(--color-secondary-white);
-    border-color: var(--color-secondary-black);
-    transition: background-color var(--primary-transition);
-  }
-  button:hover {
-    border-color: var(--color-secondary-black);
-    background-color: #dadde1;
-    outline: transparent;
-  }
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }

@@ -1,15 +1,15 @@
-import { Suspense } from "react"
-import AppBar from "../AppBar/AppBar"
-import Loader from "../Loader/Loader"
+// import { Suspense } from "react"
+// import AppBar from "../Header/Header"
+// import Loader from "../Loader/Loader"
 
 
-const Layout = ({children}) => {
-  return (
-    <div>
-      <AppBar />
-      <Suspense fallback={<Loader/>}>{children}</Suspense>
-    </div>
-  )
-}
+// const Layout = ({children}) => {
+//   return (
+//     <div>
+//       <AppBar />
+//       <Suspense fallback={<Loader/>}>{children}</Suspense>
+//     </div>
+//   )
+// }
 
-export default Layout
+// export default Layout

@@ -1,15 +1,33 @@
 .nav {
     display: flex;
+    align-items: center;
     gap: 24px;
-    padding-top: 30px;
-    padding-bottom: 30px;
 }
 
 .link {
 font-size: 20px;
+color: var(--color-secondary-purpul);
+padding-top: 24px;
+padding-bottom: 24px;
 transition: color 250 ms ease-in-out;
 }
 
+.link:hover {
+    color: var(--color-primary-white)
+}
+
 .active {
-    color: var(--color-secondary-purpul);
+    color: var(--color-active-purpul);
+}
+
+@media (max-width: 767px) {
+    .nav {
+        gap: 12px;
+      }
+      
+      .link {
+        font-size: 16px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
 }

@@ -1,9 +1,9 @@
-import { useDispatch, useSelector } from "react-redux";
-import { MdOutlineLogin } from "react-icons/md";
-import { selectUser } from "../../redux/auth/selectors";
+import { useDispatch, useSelector } from 'react-redux';
+import { MdOutlineLogin } from 'react-icons/md';
+import { selectUser } from '../../redux/auth/selectors';
 
-import css from './UserMenu.module.css'
-import { logout } from "../../redux/auth/operations";
+import { logout } from '../../redux/auth/operations';
+import css from './UserMenu.module.css';
 
 const UserMenu = () => {
   const dispatch = useDispatch();
@@ -11,15 +11,16 @@ const UserMenu = () => {
 
   const onLogout = () => {
     dispatch(logout());
-  }
-
+  };
 
   return (
     <div className={css.wrap}>
       <p className={css.text}>Hello, {user.name}!</p>
-      <button type ='button' onClick={onLogout} className={css.btn}><MdOutlineLogin className={css.icon}/></button>
+      <button type="button" onClick={onLogout} className={css.btn}>
+        <MdOutlineLogin className={css.icon} />
+      </button>
     </div>
-  )
-}
+  );
+};
 
-export default UserMenu
+export default UserMenu;
