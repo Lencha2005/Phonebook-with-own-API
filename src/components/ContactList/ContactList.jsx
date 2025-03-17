@@ -23,11 +23,11 @@ dispatch(fetchContacts())
       {Array.isArray(contacts) && contacts.length > 0 && (
         contacts.map(contact => {
         return (
-        <li key={contact.id} className={css.item}>
+        <li key={contact._id} className={css.item}>
           <Contact
           name={contact.name}
           number={contact.number}
-          id={contact.id}
+          _id={contact._id}
           />
         </li>
       )})
