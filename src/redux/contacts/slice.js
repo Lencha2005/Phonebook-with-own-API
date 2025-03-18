@@ -43,7 +43,7 @@ export const contactsSlice = createSlice({
     .addCase(deleteContact.pending, handlePending)
     .addCase(deleteContact.fulfilled, (state, action) => {
         state.isLoading = false;
-        state.items = state.items.filter((item) => item.id !== action.payload.id);
+        state.items = state.items.filter((item) => item._id !== action.payload._id);
         state.error = null;
         toast.success("Contact delete successfully!");
     })

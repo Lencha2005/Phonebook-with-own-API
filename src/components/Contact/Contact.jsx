@@ -13,7 +13,7 @@ import css from './Contact.module.css';
 const Contact = ({ _id, name, number }) => {
   const dispatch = useDispatch();
 
-  const onDeleteContact = _id => {
+  const onDeleteContact = id => {
     Swal.fire({
       title: 'Are you sure?',
       text: 'Do you really want to delete this contact?',
@@ -26,7 +26,7 @@ const Contact = ({ _id, name, number }) => {
       color: '#fff',
     }).then(result => {
       if (result.isConfirmed) {
-        dispatch(deleteContact(_id));
+        dispatch(deleteContact(id));
       }
     });
   };
